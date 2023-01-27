@@ -49,7 +49,7 @@
     <h2>&clubs;We have to go now.. Just remember, we will come back.&clubs;</h2> 
 
     <script>
-      const letters = "-.ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const letters = "-.A1B2C3D4E5F6G7H8I9J1K2L3M4N5O6P7Q8R9S0TUVWXYZ";
 
       function applyEffect(element) {
           let interval = null;
@@ -80,12 +80,12 @@
       }
       
       const h1 = document.querySelector("h1");
-      const p = document.querySelectorAll("p");
-      const h2 = document.querySelector("h2");
-      
-      applyEffect(h1);
-      applyEffect(p);
-      applyEffect(h2);
+const ps = document.querySelectorAll("p");
+const h2s = document.querySelectorAll("h2");
+
+applyEffect(h1);
+ps.forEach(p => applyEffect(p));
+h2s.forEach(h2 => applyEffect(h2));
       
     </script>
   </body>
